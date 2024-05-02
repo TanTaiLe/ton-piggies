@@ -1,0 +1,38 @@
+$titleFont: 'LuckiestGuy';
+$contentFont: 'Montserrat';
+
+// Title font
+@font-face {
+  font-family: $titleFont;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf) format('truetype');
+}
+
+// Content font
+@font-face {
+  font-family: $contentFont;
+  font-weight: 400;
+  src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: $contentFont;
+  font-weight: 400;
+  font-style: italic;
+  src: url(/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: $contentFont;
+  font-weight: 600;
+  src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: $contentFont;
+  font-weight: 700;
+  src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: $contentFont;
+  font-weight: 800;
+  src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('truetype');
+}

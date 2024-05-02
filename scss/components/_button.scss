@@ -1,0 +1,15 @@
+.btn {
+  font-size: 20px;
+  font-family: $titleFont;
+  line-height: 15px;
+  padding: 20px 24px;
+  background-color: $cl_button-background;
+  border: 3px solid $cl_btn-border;
+  border-radius: 16px;
+  box-shadow: 0 3px $cl_button-background;
+  &:hover {
+    background-color: lighten($cl_button-background, 10%);
+    border: 3px solid $cl_btn-border;
+    box-shadow: 0 3px lighten($cl_button-background, 10%);
+  }
+}
