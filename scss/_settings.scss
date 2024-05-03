@@ -7,6 +7,11 @@ body {
   height: calc(100vh - 131px);
 }
 
+.container--custom {
+  padding: 0 200px;
+  width: 100%;
+}
+
 .section {
   height: 100%;
   display: flex;
@@ -26,6 +31,8 @@ body {
       text-transform: capitalize;
       color: $cl_text--primary;
       margin-bottom: 8px;
+      letter-spacing: 3px;
+
       &--small {
         font-size: $text_title--2;
       }
@@ -55,5 +62,50 @@ body {
       line-height: 28px;
     }
 
+  }
+}
+
+.slick {
+  &-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    color: transparent;
+    background-color: $cl_main;
+    position: absolute;
+
+    &::before {
+      content: url(/assets/images/icons/arrow_back_ios_new.svg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  &-disabled {
+    background-color: rgba($cl_text--primary, 20%);
+
+    &::before {
+      content: url(/assets/images/icons/arrow_back_ios_new_disabled.svg);
+    }
+  }
+
+  &-next {}
+
+  &-prev {
+    transform: rotate(180deg);
+  }
+}
+
+.slider {
+  &-index {
+    display: block;
+    font-size: $text_content--xl;
+    font-weight: 800;
+    color: $cl_text--primary;
+    width: 100%;
+    text-align: center;
   }
 }

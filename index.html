@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/app.css">
   <title>Document</title>
-  <script src="/js/app.js"></script>
+  <script type="module" src="/js/app.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between w-100">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/logo.png" alt="" id="logo">
         </a>
@@ -41,7 +41,7 @@
   </header>
   <div class="scroll-container">
     <section class="section top">
-      <div class="container">
+      <div class="container--custom">
         <div class="row align-items-center">
           <div class="col-7">
             <div class="section-content">
@@ -82,7 +82,7 @@
     </section>
 
     <section class="section games">
-      <div class="container">
+      <div class="container--custom">
         <div class="row align-items-center">
           <div class="col-5">
             <div class="section-content">
@@ -124,12 +124,287 @@
     </section>
 
     <section class="section roadmap">
-
+      <div class="container--custom p-0">
+        <div class="section-content">
+          <div class="d-flex justify-content-center">
+            <h1 class="section-content-title highlight">road map</h1>
+          </div>
+          <div class="roadmap-slider slider">
+            <div class="roadmap-slider-item roadmap-tree">
+              <div class="roadmap-tree-item odd">
+                <div class="time order-xl-1">
+                  2024 Q1
+                </div>
+                <div class="icon order-xl-2">
+                  <img src="/assets/images/piggies-1.png" alt="">
+                </div>
+                <div class="detail order-xl-0">
+                  <h4 class="detail-title">Launch Phase</h4>
+                  <ol class="detail-list">
+                    <li>Launch Piggies-themed Casual Gaming Center on Telegram.</li>
+                    <li>Implement PLAY-TO-EARN AIRDROP model.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="roadmap-tree-item even">
+                <div class="time order-xl-1">
+                  2024 Q2
+                </div>
+                <div class="icon order-xl-0">
+                  <img src="/assets/images/piggies-2.png" alt="">
+                </div>
+                <div class="detail order-xl-2">
+                  <h4 class="detail-title">Token Expansion</h4>
+                  <ol class="detail-list">
+                    <li>List project's token on major cryptocurrency exchanges.</li>
+                    <li>Conduct token airdrop for early users and contributors.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="roadmap-tree-item odd">
+                <div class="time order-xl-1">
+                  2024 Q3
+                </div>
+                <div class="icon order-xl-2">
+                  <img src="/assets/images/piggies-3.png" alt="">
+                </div>
+                <div class="detail order-xl-0">
+                  <h4 class="detail-title">Platform Enhancement</h4>
+                  <ol class="detail-list">
+                    <li>Introduce GameFi Platform Economy with token staking.</li>
+                    <li>Enable token staking for new game NFTs and airdrops.</li>
+                    <li>Introduce revenue sharing from new game launches.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="roadmap-tree-item even">
+                <div class="time order-xl-1">
+                  2024 Q4
+                </div>
+                <div class="icon order-xl-0">
+                  <img src="/assets/images/piggies-2.png" alt="">
+                </div>
+                <div class="detail order-xl-2">
+                  <h4 class="detail-title">Innovation and Expansion</h4>
+                  <ol class="detail-list">
+                    <li>Develop and launch AI-powered cats with AR technology.</li>
+                    <li>Attract traditional users with innovative companionship solutions.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="roadmap-slider-item roadmap-tree">
+              <div class="roadmap-tree-item odd">
+                <div class="time order-xl-1">
+                  2025 Q1
+                </div>
+                <div class="icon order-xl-2">
+                  <img src="/assets/images/piggies-1.png" alt="">
+                </div>
+                <div class="detail order-xl-0">
+                  <h4 class="detail-title">Expansion and Optimization</h4>
+                  <ol class="detail-list">
+                    <li> Expand the user base of the cat-themed casual gaming center.</li>
+                    <li>Optimize the GAMEFI platform and staking mechanisms based on user feedback. </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="roadmap-tree-item even">
+                <div class="time order-xl-1">
+                  2025 Q2
+                </div>
+                <div class="icon order-xl-0">
+                  <img src="/assets/images/piggies-2.png" alt="">
+                </div>
+                <div class="detail order-xl-2">
+                  <h4 class="detail-title">Enhancements to AI Cats and AR Features </h4>
+                  <ol class="detail-list">
+                    <li>Introduce new features and enhancements to the AI cats and AR technology. </li>
+                    <li>Focus on increasing user engagement and expanding the use cases for AI companions. </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="roadmap-tree-item odd">
+                <div class="time order-xl-1">
+                  2025 Q3
+                </div>
+                <div class="icon order-xl-2">
+                  <img src="/assets/images/piggies-3.png" alt="">
+                </div>
+                <div class="detail order-xl-0">
+                  <h4 class="detail-title">Cat Universe: Another Forest Plant Development</h4>
+                  <ol class="detail-list">
+                    <li>Begin development of the Cat Universe: Another Forest Planet metaverse. </li>
+                    <li>Implement AI+LBS technology to create immersive virtual worlds for user interaction. </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="slider-index" id="roadmap-index">1</span>
+        </div>
     </section>
 
     <section class="section fairlaunch">
-      
+      <div class="container--custom">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <div class="section-content">
+              <h1 class="section-content-title section-content-title--small">until the end of fairlauch</h1>
+
+              <div class="fairlaunch-countdown">
+                <div class="fairlaunch-countdown-item">
+                  <span id="days"></span>
+                  Days
+                </div>
+                <div class="fairlaunch-countdown-item">
+                  <span id="hours"></span>
+                  Hours
+                </div>
+                <div class="fairlaunch-countdown-item">
+                  <span id="minutes"></span>
+                  Minutes
+                </div>
+                <div class="fairlaunch-countdown-item">
+                  <span id="seconds"></span>
+                  Seconds
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 offset-1">
+            <img src="/assets/images/piggies-3.png" alt="">
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="section tokenomics">
+      <div class="container--custom">
+        <div class="row align-items-center">
+          <div class="col-7">
+            <img src="/assets/images/chart.png" alt="">
+          </div>
+          <div class="col-5">
+            <div class="section-content">
+              <h1 class="section-content-title section-content-title--small">PIE-CHART<br>
+                TOKENOMICS
+                <img src="/assets/images/piggies-1.png" alt="">
+              </h1>
+              <p class="section-content-paragraph">
+                Tokenomics refers to the economics of a token, encompassing its creation, distribution, and value within
+                a blockchain ecosystem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teams">
+      <div class="container--custom">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <div class="teams-item">
+              <img src="/assets/images/team/team-1.png" alt="" class="avatar">
+              <h4 class="name">David</h4>
+              <span class="title">CEO</span>
+              <p class="desc">Co-founder and CEO of Pluto Studio & Catizen, Web3 Director of Credito Capital, COO of Yao
+                Teng Investment Fund</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="teams-item">
+              <img src="/assets/images/team/team-2.png" alt="" class="avatar">
+              <h4 class="name">Pierce</h4>
+              <span class="title">CMO</span>
+              <p class="desc">Co-founder and CMO of Pluto Studio & Catizen, Experienced Portfolio Manager, Investment
+                Advisor, and Web 3 Innovator</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="teams-item">
+              <img src="/assets/images/team/team-3.png" alt="" class="avatar">
+              <h4 class="name">Stanislav</h4>
+              <span class="title">CPO</span>
+              <p class="desc">Work as a music composer and sound designer more than 9 years. Projects: Yandere
+                simulator, Wenjia, Stickman, Dismount, Project Olympus War ,etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partners">
+      <div class="container--custom p-0">
+        <div class="section-content">
+          <h1 class="section-content-title highlight">partners</h1>
+          <div class="partners-list row">
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-1.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-2.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-3.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-4.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-5.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-6.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-7.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-8.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-9.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-10.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-11.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-12.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-13.png" alt="">
+            </div>
+            <div class="col-2">
+              <img src="/assets/images/partners/partner-14.png" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container--custom">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <span class="copyright">
+              ©2024 TONPIGGIES.COPYRIGHT
+            </span>
+          </div>
+          <div class="col-4">
+            <div class="info">
+              <a href="" class="info-item">Privacy Policy</a>
+              <a href="" class="info-item">Media Kit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 

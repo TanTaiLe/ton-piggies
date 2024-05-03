@@ -1,6 +1,6 @@
 .top {
   background-image: url(../../assets/images/background/background-1.png);
-  
+
   .stats {
     display: flex;
     align-items: center;
@@ -26,9 +26,11 @@
     }
   }
 }
+
 .trailer {
   background-image: url(../../assets/images/background/video.png);
 }
+
 .games {
   background-image: url(../../assets/images/background/background-2.png);
 
@@ -44,8 +46,274 @@
 
 .roadmap {
   background-image: url(../../assets/images/background/background-3.png);
+  overflow: hidden;
+
+  &-slider {
+    margin: 48px 0 24px;
+    position: relative;
+
+    .slick-track {
+      display: flex;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 7%;
+        top: calc((100% - 1px) / 2);
+        background: #ADADAD;
+        height: 1px;
+        width: 86%;
+        z-index: -1;
+      }
+    }
+  }
+
+  .slick-arrow {
+    bottom: -75px;
+
+    &.slick-prev {
+      left: 45.5%;
+    }
+
+    &.slick-next {
+      right: 45.5%;
+    }
+  }
+
+
+  &-tree {
+    display: flex !important;
+    padding: 0 200px;
+    min-height: 436px;
+
+    &-item {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // margin-left: -120px;
+      width: 25%;
+
+      &:first-child {
+        margin: 0
+      }
+
+      &.odd {
+        padding-bottom: 190px;
+        justify-content: flex-end;
+
+        .time::before {
+          border-top-color: $cl_text--primary;
+          border-width: 12px 12px 0 12px;
+          left: 0;
+          right: 0;
+          bottom: -6px;
+        }
+      }
+
+      &.even {
+        padding-top: 190px;
+        justify-content: flex-start;
+
+        .time::before {
+          border-bottom-color: $cl_text--primary;
+          border-width: 0 12px 12px 12px;
+          left: 0;
+          right: 0;
+          top: -6px;
+        }
+      }
+
+      .time {
+        display: inline-block;
+        font-size: $text_content--md;
+        font-weight: 800;
+        line-height: 28px;
+        color: #fff;
+        padding: 16px 36px;
+        border-radius: 20px;
+        background-color: $cl_text--primary;
+        margin: 16px 0;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          display: block;
+          content: '';
+          border-color: transparent;
+          border-style: solid;
+          border-width: 0;
+          width: 0;
+          height: 0;
+          margin: auto;
+        }
+      }
+
+      .icon {
+        height: 44px;
+        margin: 12px 52px;
+
+        img {
+          height: 100%;
+          width: auto !important;
+        }
+      }
+
+      .detail {
+        width: 220%;
+
+        &-title {
+          font-size: $text_content--md;
+          font-weight: 800;
+          line-height: 27px;
+          color: $cl_main;
+          margin-bottom: 8px;
+        }
+
+        &-list {
+          padding-left: 16px;
+          margin: 0;
+
+          li {
+            font-size: $text_content--xs;
+            font-weight: 800;
+            line-height: 20px;
+            color: $cl_text--primary;
+          }
+        }
+      }
+    }
+  }
 }
 
 .fairlaunch {
-  background-image: url(../../assets/images/background/background-4.png);
+  background-color: #74C959;
+  overflow: hidden;
+
+  img {
+    width: 200%;
+  }
+
+  &-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+    &-item {
+      width: 190px;
+      height: 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 4px solid $cl_text--primary;
+      border-radius: 48px;
+      box-shadow: 0 6px #fff;
+      margin-right: 48px;
+      font-size: 24px;
+      color: $cl_text--primary;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      span {
+        font-size: 80px;
+        font-weight: 700;
+        color: $cl_text--primary;
+      }
+    }
+  }
+}
+
+.tokenomics {
+  background-image: url(/assets/images/background/background-5.png);
+
+  .section-content-title {
+    position: relative;
+    display: inline-block;
+
+    img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 48px;
+      transform: rotate(-17.43deg);
+    }
+  }
+
+}
+
+.teams {
+  background-image: url(/assets/images/background/background-6.png);
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar {
+      width: 200px;
+      border: 3px solid $cl_text--primary;
+      box-shadow: 0 12px $cl_main;
+      border-radius: 50%;
+      margin-bottom: 48px;
+    }
+
+    .name {
+      color: $cl_text--primary;
+      font-size: $text_content--xl;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .title {
+      color: $cl_main;
+      font-size: $text_content--md;
+      font-weight: 800;
+      line-height: 27px;
+      margin-bottom: 16px;
+    }
+
+    .desc {
+      color: $cl_text--secondary;
+      font-size: $text_content--sm;
+      font-weight: 600;
+      line-height: 23px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.partners {
+  background-image: url(/assets/images/background/background-7.png);
+
+  .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      &.highlight::before {
+        background-color: #FCA296;
+      }
+    }
+  }
+
+  &-list {
+    width: 50%;
+    margin-top: 48px;
+
+    img {
+      width: 100%;
+      margin: 12px 0;
+      border: 2px solid $cl_text--primary;
+      border-radius: 24px;
+      box-shadow: 0 4px #fff;
+    }
+  }
 }
