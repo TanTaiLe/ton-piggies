@@ -16,7 +16,7 @@ jQuery(function () {
   })
 
   jQuery('.games-slider').slick({
-    autoplay: true,
+    // autoplay: true,
     speed: 500,
   });
   jQuery('.games-slider').on('afterChange', (e, currentSlide) => {

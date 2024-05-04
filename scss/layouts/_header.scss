@@ -4,6 +4,9 @@
 
   #logo {
     width: 140px;
+    @media (max-width: 1920px ) {
+      width: 80px;
+    }
     @media (max-width: 1024px ) {
       width: 80px;
     }
@@ -12,6 +15,9 @@
   .navbar {
     padding: 12px 60px;
     background-color: $cl_background;
+    @media (max-width: 1920px ) {
+      padding: 8px 60px;
+    }
     &-brand {
       margin-right: 100px;
     }
@@ -20,9 +26,13 @@
       .nav {
         &-link {
           padding: 24px !important;
-          font-size: 20px;
+          font-size: $text_content--md;
           font-weight: 600;
           color: $cl_text--secondary;
+          @media (max-width: 1920px ) {
+            font-size: $text_content--sm;
+            padding: 20px !important;
+          }
 
           &:hover,
           &.active {
