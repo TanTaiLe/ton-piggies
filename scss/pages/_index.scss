@@ -35,6 +35,10 @@
 
 .trailer {
   background-image: url(../../assets/images/background/video.png);
+  video {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .games {
