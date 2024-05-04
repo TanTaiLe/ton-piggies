@@ -10,16 +10,41 @@ body {
 
 .scroll-container {
   height: calc(100vh - 120px);
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  &::-webkit-scrollbar {
-    display: none;/* Chrome, Safari and Opera */
+  overflow: hidden;
+  position: relative;
+  .slick-dots {
+    position: absolute;
+    z-index: 999;
+    bottom: 48px;
+    right: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .slick-active {
+      button {
+        background-color: $cl_button-background;
+      }
+    }
+    button {
+      width: 18px;
+      height: 18px;
+      color: transparent;
+      background: transparent;
+      border: 2px solid $cl_text--primary;
+      border-radius: 50%;
+    }
   }
+  // overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
+  // -ms-overflow-style: none;  /* IE and Edge */
+  // scrollbar-width: none;  /* Firefox */
+  // &::-webkit-scrollbar {
+  //   display: none;/* Chrome, Safari and Opera */
+  // }
 
   @media (max-width: 1920px ) {
     height: calc(100vh - 80px);
+
   }
   
   @media (max-width: 1024px ) {
@@ -44,13 +69,16 @@ body {
 
 .section {
   height: 100%;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   position: relative;
+  @media (max-width: 1920px ) {
+    height: calc(100vh - 80px);
+  }
   @media (max-width: 1024px ) {
     background-size: auto 100%;
   }
