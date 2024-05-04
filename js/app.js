@@ -3,11 +3,24 @@ import * as  slick from './libs/slick.min.js';
 
 jQuery(function () {
   jQuery('.roadmap-slider').slick({
-    infinite: false
+    infinite: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: 'unslick'
+      },
+    ]
   });
-
   jQuery('.roadmap-slider').on('afterChange', (e, currentSlide) => {
     jQuery('#roadmap-index').text(currentSlide.currentSlide + 1);
+  })
+
+  jQuery('.games-slider').slick({
+    autoplay: true,
+    speed: 500,
+  });
+  jQuery('.games-slider').on('afterChange', (e, currentSlide) => {
+    jQuery('#games-index').text(currentSlide.currentSlide + 1);
   })
 })
 

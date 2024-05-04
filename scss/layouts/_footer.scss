@@ -1,9 +1,13 @@
 .footer {
   background-color: #B1CD68;
-  padding: 32px 0;
+  padding: 24px 0;
+  width: 100%;
+  margin-top: 72px;
+
   .container--custom {
     padding: 0 60px;
   }
+
   .copyright {
     font-size: $text_content--md;
     font-family: $titleFont;
@@ -12,11 +16,13 @@
     width: 100%;
     display: block;
   }
+
   .info {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+
     &-item {
       color: $cl_text--primary;
       margin-left: 24px;

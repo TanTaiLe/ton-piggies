@@ -1,11 +1,16 @@
-header {
+.header {
+  position: relative;
+  z-index: 999;
 
   #logo {
     width: 140px;
+    @media (max-width: 1024px ) {
+      width: 80px;
+    }
   }
 
   .navbar {
-    padding: 18px 60px;
+    padding: 12px 60px;
     background-color: $cl_background;
     &-brand {
       margin-right: 100px;
@@ -28,6 +33,23 @@ header {
             font-weight: 800;
           }
         }
+      }
+    }
+  }
+
+  &-social {
+    position: absolute;
+    right: 60px;
+    top: calc(100% + 48px);
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 16px;
+      border: 2px solid $cl_text--primary;
+      margin-bottom: 24px;
+      border-radius: 50%;
+      img {
+        width: 24px;
       }
     }
   }
