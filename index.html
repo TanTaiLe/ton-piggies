@@ -12,14 +12,17 @@
 <body>
   <header class="header">
     <nav class="navbar navbar-expand-lg">
-      <div class="d-flex align-items-center justify-content-between w-100">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/images/logo.png" alt="" id="logo">
-        </a>
+      <div class="header-container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="navbar-brand">
+          <a href="#">
+            <img class="d-lg-block d-none" src="./assets/images/logo.png" alt="" id="logo">
+          </a>
+          <a href="" class="btn d-lg-none">PLAY FOR FREE</a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -32,13 +35,24 @@
               <a class="nav-link" href="#">White Paper</a>
             </li>
           </ul>
-          <div class="d-flex">
-            <button class="btn">PLAY FOR FREE</button>
+          <div class="d-lg-flex d-none">
+            <a href="" class="btn">PLAY FOR FREE</a>
+          </div>
+          <div class="header-social d-lg-none">
+            <a href="">
+              <img src="/assets/images/icons/telegram.png" alt="">
+            </a>
+            <a href="">
+              <img src="/assets/images/icons/twitter.png" alt="">
+            </a>
+            <a href="">
+              <img src="/assets/images/icons/medium.png" alt="">
+            </a>
           </div>
         </div>
       </div>
     </nav>
-    <div class="header-social">
+    <div class="header-social d-lg-flex d-none">
       <a href="">
         <img src="/assets/images/icons/telegram.png" alt="">
       </a>
@@ -88,8 +102,8 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-9">
-            <img class="w-100 mt-xl-0 mt-4" src="/assets/images/piggies-2.png" alt="">
+          <div class="col-xl-5 col-7">
+            <img class="w-100 mt-xl-0 mt-5" src="/assets/images/piggies-2.png" alt="">
           </div>
         </div>
       </div>
@@ -119,8 +133,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-5 offset-xl-1 col-10">
-              <div class="games-list mt-xl-0 mt-5 row">
+            <div class="col-xl-5 offset-xl-1 col-md-8 col-10">
+              <div class="games-list mt-xl-0 mt-xl-5 mt-4 row">
                 <div class="col-6">
                   <img class="games-list-item" src="/assets/images/games/game-1.png" alt="">
                 </div>
@@ -182,9 +196,9 @@
             </div>
             <div class="col-xl-5 offset-xl-1 col-10">
               <div class="games-list">
-                <video class="games-list-video" autoplay loop muted webkit-playsinline="true" x5-playsinline="true" playsinline="true"
-                  x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5" x5-video-player-fullscreen="true"
-                  poster="/assets/images/background/video.png">
+                <video class="games-list-video" autoplay loop muted webkit-playsinline="true" x5-playsinline="true"
+                  playsinline="true" x-webkit-airplay="allow" preload="auto" x5-video-player-type="h5"
+                  x5-video-player-fullscreen="true" poster="/assets/images/background/video.png">
                   <source src="/assets/trailer.mp4" type="video/mp4"></video>
               </div>
             </div>
@@ -353,10 +367,10 @@
     <section class="section tokenomics">
       <div class="container--custom">
         <div class="row align-items-center justify-content-center">
-          <div class="col-xl-6 order-xl-0 order-1">
+          <div class="col-xl-6 col-lg-10 col-10 order-xl-0 order-1">
             <img class="w-100 mt-xl-0 mt-5" src="/assets/images/chart.png" alt="">
           </div>
-          <div class="col-xl-5 offset-xl-1 order-xl-1 order-0">
+          <div class="col-xl-5 col-lg-10 col-11 offset-xl-1 order-xl-1 order-0">
             <div class="section-content">
               <h1 class="section-content-title section-content-title--small">PIE-CHART<br>
                 TOKENOMICS
@@ -463,12 +477,12 @@
           <div class="row align-items-center justify-content-between">
             <div class="col-xl-4 d-xl-block d-none">
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-6">
               <span class="copyright">
                 ©2024 TONPIGGIES.COPYRIGHT
               </span>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-6">
               <div class="info">
                 <a href="" class="info-item">Privacy Policy</a>
                 <a href="" class="info-item">Media Kit</a>

@@ -2,12 +2,22 @@
   position: relative;
   z-index: 999;
 
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   #logo {
     width: 140px;
-    @media (max-width: 1920px ) {
+
+    @media (max-width: 1920px) {
       width: 80px;
     }
-    @media (max-width: 1024px ) {
+
+    @media (max-width: 1024px) {
       width: 80px;
     }
   }
@@ -15,11 +25,17 @@
   .navbar {
     padding: 12px 60px;
     background-color: $cl_background;
-    @media (max-width: 1920px ) {
+
+    @media (max-width: 1920px) {
       padding: 8px 60px;
     }
+
     &-brand {
       margin-right: 100px;
+
+      @media (max-width: 1024px) {
+        margin-right: 0;
+      }
     }
 
     &-nav {
@@ -29,9 +45,13 @@
           font-size: $text_content--md;
           font-weight: 600;
           color: $cl_text--secondary;
-          @media (max-width: 1920px ) {
+
+          @media (max-width: 1920px) {
             font-size: $text_content--sm;
             padding: 20px !important;
+          }
+          @media (max-width: 768px) {
+            text-align: center;
           }
 
           &:hover,
@@ -53,13 +73,30 @@
     top: calc(100% + 48px);
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+      position: static;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+
     a {
       padding: 16px;
       border: 2px solid $cl_text--primary;
       margin-bottom: 24px;
       border-radius: 50%;
+
+      @media (max-width: 768px) {
+        margin-right: 24px;
+        padding: 12px;
+      }
+
       img {
         width: 24px;
+        @media (max-width: 768px) {
+          width: 20px;
+        }
       }
     }
   }

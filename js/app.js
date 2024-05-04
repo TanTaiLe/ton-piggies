@@ -1,5 +1,7 @@
 import * as $ from './libs/jquery-3.7.1.slim.min.js';
 import * as  slick from './libs/slick.min.js';
+import './libs/popper.min.js';
+import './libs/bootstrap.min.js'
 
 jQuery(function () {
   jQuery('.roadmap-slider').slick({
