@@ -30,6 +30,11 @@
       padding: 8px 60px;
     }
 
+    
+    @media (max-width: 575px ) {
+      padding: 8px 12px;
+    }
+
     &-brand {
       margin-right: 100px;
 
