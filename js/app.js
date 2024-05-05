@@ -10,6 +10,12 @@ jQuery(function () {
     infinite: false,
     arrows: false,
     dots: true,
+    responsive: [{
+      breakpoint: 576,
+      settings: {
+        dots: false,
+      }
+    },]
   })
   jQuery('.scroll-container').on('wheel', e => {
     e.preventDefault();

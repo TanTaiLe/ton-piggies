@@ -15,6 +15,10 @@
     font-size: $text_content--sm;
     padding: 16px 24px;
   }
+  @media (max-width: 575px ) {
+    font-size: $text_content--sm;
+    padding: 8px 16px;
+  }
 
   &:hover {
     background-color: lighten($cl_button-background, 10%);
