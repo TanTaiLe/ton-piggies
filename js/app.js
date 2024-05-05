@@ -11,7 +11,7 @@ jQuery(function () {
     arrows: false,
     dots: true,
     responsive: [{
-      breakpoint: 576,
+      breakpoint: 769,
       settings: {
         dots: false,
       }
